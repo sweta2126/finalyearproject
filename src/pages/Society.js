@@ -5,7 +5,7 @@ function Society() {
     <>
       
       
-      <form style={{}}>
+      <form style={{marginLeft:'150px',marginRight:'150px'}}>
         <div className="mb-3 " style={{}}>
           <label htmlFor="exampleFormControlInput1" className="form-label " style={{padding:'6px 6px  6px 0',display:'inline-block'}} >
             Name
