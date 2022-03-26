@@ -7,6 +7,8 @@ import { BrowserRouter as Router,
   
 
 import Home from './pages/Home';
+// import Notification from './pages/Notification';
+// import Setting from './pages/Setting';
 import {Units , RegisterOwner , RegisterOccupier} from './pages/Units';
 import Society from './pages/Society';
 import {Committee , CommitteeRole , Committees} from './pages/Committee';
@@ -16,7 +18,7 @@ function App() {
   return (
     <>
       <Router>
-        <Sidebar title="BUMA" />
+        <Sidebar title="Building-Management" />
         <Routes>
           <Route exact path='/home' element={<Home/>}/> 
           <Route exact path='/society' element={<Society/>} />
@@ -26,7 +28,9 @@ function App() {
           <Route exact path='/committee' element={<Committee/>} />
           <Route exact path='/committee/committeerole' element={<CommitteeRole/>} />
           <Route exact path='/committee/committees' element={<Committees/>} />
-          
+          {/* <Route exact path='/notification' element={<Notification/>} />
+          <Route exact path='/setting' element={<Setting/>} />
+           */}
 
         </Routes>
       </Router>
