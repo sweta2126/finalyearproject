@@ -11,21 +11,9 @@ export const SidebarData = [
         icon: <AiIcons.AiFillHome />, 
         cName: 'nav-text' 
     },
-    // { 
-    //     title: 'Notification', 
-    //     path: '/notification', 
-    //     icon: <AiIcons.AiFillAlert />, 
-    //     cName: 'nav-text' 
-    // },
-    // { 
-    //     title: 'Setting', 
-    //     path: '/setting', 
-    //     icon: <AiIcons.AiFillSetting />, 
-    //     cName: 'nav-text' 
-    // }, 
     
     { 
-        title: 'Society ', 
+        title: 'Society  ', 
         path: '/society', 
         icon: <IoIcons.IoIosAlbums />, 
         cName: 'nav-text' 
@@ -77,5 +65,22 @@ export const SidebarData = [
             },
         ]
         
-    }
+    },
+
+
+    // { 
+    //         title: 'Notification', 
+    //         path: '/notification', 
+    //         icon: <AiIcons.AiFillAlert />, 
+    //         cName: 'nav-text' 
+    // },
+    //     { 
+    //         title: 'Setting', 
+    //         path: '/setting', 
+    //         icon: <AiIcons.AiFillSetting />, 
+    //         cName: 'nav-text' 
+    //     }, 
+
+    
+        
 ];

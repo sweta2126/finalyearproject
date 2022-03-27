@@ -1,4 +1,10 @@
 import React from 'react'; 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { faUser, faCircleXmark, faCirclePlus, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+
+library.add(fas, faUser, faCircleXmark, faCirclePlus, faEnvelope, faPhone )
 
 export const Units =()=>{
   return(
@@ -8,78 +14,135 @@ export const Units =()=>{
   );
 };
 
-export const RegisterOwner=()=>{
+export const RegisterOccupier=()=>{
   return(
     <>
-    <style>
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-          crossOrigin="anonymous"
-        />
-        </style>
-        <form>
-        <div className="mb-3">
-<label htmlFor="exampleFormControlInput1" className="form-label">Building Number</label>  
-        <select className="form-select" aria-label="Default select example">
-  <option value>Building number</option>
-  <option value="1">101</option>
-  <option value="2">102</option>
-  <option value="3">104</option>
-  <option value="4">105</option>
-  <option value="5">106</option>
-  <option value="6">107</option>
-  <option value="7">108</option>
-  <option value="8">109</option>
-</select>
+    <main className="main" style={{maxWidth:'85rem',width:'100%',height:'auto',margin:'0 auto',padding:'0.2rem '}} >
+
+
+<div className="wrapper" style={{maxWidth:'38rem',width:'100%',margin:'0 auto',padding:'5rem 1.5 rem'}} >
+
+    <div className="card" style={{marginTop:'50px',padding:'1.5rem 2rem',border:'none',outline:'none',borderRadius:'4px',color:'#252a32',background:'#ffffff',boxShadow:'0 1px 3px rgba(0,0,0,0.12),0 1px 3px rgba(0,0,0,0.24)'}} >
+    <h2 style={{textAlign:'center',color:'blue',borderBottom:'1px solid #000',margin:'10px 0 20px'}}>Register Occupier</h2>
+
+        <form className="form" style={{width:'100%',height:'auto',margin:'2rem 0'}}>
+
+            <div className="form-group" style={{display:'-webkit-box',display:'flex',WebkitBoxOrient:'horizontal',WebkitBoxDirection:'normal',flexDirection:'row',WebkitBoxPack:'justify',justifyContent:'space-between',WebkitBoxAlign:'center',marginBottom:'1rem'}}>
+                <input type="text" name="name" id="name" className="input-field" placeholder="Name" style={{fontFamily:'inherit',fontSize:'0.95rem',fontWeight:'400',lineHeight:'inherit',width:'100%',height:'auto',padding:'0.75rem 1.25rem',border:'none',outline:'none',borderRadius:'2rem',color:'#252a32',background:'#f1f5f8'}}/>
+                
+                
+            </div>
+            <div className="form-group" style={{display:'-webkit-box',display:'flex',WebkitBoxOrient:'horizontal',WebkitBoxDirection:'normal',flexDirection:'row',WebkitBoxPack:'justify',justifyContent:'space-between',WebkitBoxAlign:'center',marginBottom:'1rem'}}>
+                <input type="email" name="email" id="email" className="input-field" placeholder="Email Address" style={{fontFamily:'inherit',fontSize:'0.95rem',fontWeight:'400',lineHeight:'inherit',width:'100%',height:'auto',padding:'0.75rem 1.25rem',border:'none',outline:'none',borderRadius:'2rem',color:'#252a32',background:'#f1f5f8'}}/>
+                
+            
+            </div>
+            <div className="form-group" style={{display:'-webkit-box',display:'flex',WebkitBoxOrient:'horizontal',WebkitBoxDirection:'normal',flexDirection:'row',WebkitBoxPack:'justify',justifyContent:'space-between',WebkitBoxAlign:'center',marginBottom:'1rem'}}>
+                <input type="text" name="area" id="area" className="input-field" placeholder="Area" style={{fontFamily:'inherit',fontSize:'0.95rem',fontWeight:'400',lineHeight:'inherit',width:'100%',height:'auto',padding:'0.75rem 1.25rem',border:'none',outline:'none',borderRadius:'2rem',color:'#252a32',background:'#f1f5f8'}}/>
+                
+            </div>
+            <div className="form-group" style={{display:'-webkit-box',display:'flex',WebkitBoxOrient:'horizontal',WebkitBoxDirection:'normal',flexDirection:'row',WebkitBoxPack:'justify',justifyContent:'space-between',WebkitBoxAlign:'center',marginBottom:'1rem'}}>
+                <input type="numerical" name="contact" id="contact" className="input-field" placeholder="Contact Number" style={{fontFamily:'inherit',fontSize:'0.95rem',fontWeight:'400',lineHeight:'inherit',width:'100%',height:'auto',padding:'0.75rem 1.25rem',border:'none',outline:'none',borderRadius:'2rem',color:'#252a32',background:'#f1f5f8'}} />
+                
+            </div>
+            <div className="form-group" style={{display:'-webkit-box',display:'flex',WebkitBoxOrient:'horizontal',WebkitBoxDirection:'normal',flexDirection:'row',WebkitBoxPack:'justify',justifyContent:'space-between',WebkitBoxAlign:'center',marginBottom:'1rem'}}>
+                <input type="text" name="flat/block" id="flat/block" className="input-field" placeholder="Flat/Block" style={{fontFamily:'inherit',fontSize:'0.95rem',fontWeight:'400',lineHeight:'inherit',width:'100%',height:'auto',padding:'0.75rem 1.25rem',border:'none',outline:'none',borderRadius:'2rem',color:'#252a32',background:'#f1f5f8'}} />
+                
+            </div>
+            <div className="form-group" style={{display:'-webkit-box',display:'flex',WebkitBoxOrient:'horizontal',WebkitBoxDirection:'normal',flexDirection:'row',WebkitBoxPack:'justify',justifyContent:'space-between',WebkitBoxAlign:'center',marginBottom:'1rem'}}>
+                <input type="number" name="" id="no ofmember" className="input-field" placeholder="Number Of Member" style={{fontFamily:'inherit',fontSize:'0.95rem',fontWeight:'400',lineHeight:'inherit',width:'100%',height:'auto',padding:'0.75rem 1.25rem',border:'none',outline:'none',borderRadius:'2rem',color:'#252a32',background:'#f1f5f8'}}/>
+                
+            </div>
+            
+            
+            <div className="form-group" style={{display:'-webkit-box',display:'flex',WebkitBoxOrient:'horizontal',WebkitBoxDirection:'normal',flexDirection:'row',WebkitBoxPack:'justify',justifyContent:'space-between',WebkitBoxAlign:'center',marginBottom:'1rem'}}>
+              <input type="button" name="submit" className="input-submit " value="Submit" style={{fontFamily:'inherit',fontSize:'0.95rem',fontWeight:'500',lineHeight:'inherit',cursor:'pointer',padding:'0.65rem 2rem', border:'none',outline:'none',borderRadius:'2rem',textAlign:'center',color:'#ffffff',background:'#7579e7',display:'inline-block',float:'right'}} />
+            </div>
+
+            <div className="form-group" style={{display:'-webkit-box',display:'flex',WebkitBoxOrient:'horizontal',WebkitBoxDirection:'normal',flexDirection:'row',WebkitBoxPack:'justify',justifyContent:'space-between',WebkitBoxAlign:'center',marginBottom:'1rem'}}>
+              <input type="button" name="save" className="input-submit " value="Save" style={{fontFamily:'inherit',fontSize:'0.95rem',fontWeight:'500',lineHeight:'inherit',cursor:'pointer',padding:'0.65rem 2rem', border:'none',outline:'none',borderRadius:'2rem',textAlign:'center',color:'#ffffff',background:'#7579e7',display:'inline-block',float:'center'}} />
+            </div>
+
+
+            <div className="form-group" style={{display:'-webkit-box',display:'flex',WebkitBoxOrient:'horizontal',WebkitBoxDirection:'normal',flexDirection:'row',WebkitBoxPack:'justify',justifyContent:'space-between',WebkitBoxAlign:'center',marginBottom:'1rem'}}>
+            <input type="button" name="cancel" className="input-submit  " value="Cancel" style={{fontFamily:'inherit',fontSize:'0.95rem',fontWeight:'500',lineHeight:'inherit',cursor:'pointer',padding:'0.65rem 2rem', border:'none',outline:'none',borderRadius:'2rem',textAlign:'center',color:'#ffffff',background:'#7579e7',display:'inline-block',float:'left'}} />
+            
+            </div>
+
+
+
+            
+        </form>
+        
+    </div>
 </div>
-<div className="mb-3">
-<label htmlFor="exampleFormControlInput1" className="form-label">Flat/Block</label>
-<select className="form-select" aria-label="Default select example">
-  <option value>Flat/Block</option>
-  <option value="1">A</option>
-  <option value="2">B</option>
-  <option value="3">C</option>
-  <option value="4">D</option>
-  <option value="5">E</option>
-  <option value="6">F</option>
-  <option value="7">G</option>
-  <option value="8">H</option>
-  <option value="9">I</option>
-  <option value="10">J</option>
-</select>
-</div>
-        <div className="mb-3">
-<label htmlFor="exampleFormControlInput1" className="form-label">Name</label>
-<input type="text" className="form-control" id="exampleFormControlInput1" placeholder="username" />
-</div>
-  <div className="mb-3">
-<label htmlFor="exampleFormControlInput1" className="form-label">Email address</label>
-<input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
-</div>
-<div className="mb-3">
-<label htmlFor="exampleFormControlInput1" className="form-label">Area</label>
-<input type="text" className="form-control" id="exampleFormControlInput1" placeholder="area name" />
-</div>
-<div className="mb-3">
-<label htmlFor="exampleFormControlInput1" className="form-label">
-  Contact Number
-</label>
-<input type="number" className="form-control" id="exampleFormControlInput1" placeholder="phone number" />
-</div>
-</form>
-<button type="button" class="btn btn-primary mx-3">Submit</button>
-<button type="button" class="btn btn-primary mx-3">Save</button>
-<button type="button" class="btn btn-primary mx-3">Cancel</button>
-</>
+</main>
+
+
+    </>
   );
 };
 
-export const RegisterOccupier=()=>{
+export const RegisterOwner=()=>{
   return(
-    <div className="reports">
-      <h1>units/RegisterOccupier</h1>
+    <>
+    <main className="main" style={{maxWidth:'85rem',width:'100%',height:'auto',margin:'0 auto',padding:'0.2rem '}} >
+
+
+<div className="wrapper" style={{maxWidth:'38rem',width:'100%',margin:'0 auto',padding:'5rem 1.5 rem'}} >
+
+
+    <div className="card" style={{marginTop:'50px',padding:'1.5rem 2rem',border:'none',outline:'none',borderRadius:'4px',color:'#252a32',background:'#ffffff',boxShadow:'0 1px 3px rgba(0,0,0,0.12),0 1px 3px rgba(0,0,0,0.24)'}} >
+        <h2 style={{textAlign:'center',color:'blue',borderBottom:'1px solid #000',margin:'10px 0 20px'}}>Register Owner</h2>
+        
+        <form className="form" style={{width:'100%',height:'auto',margin:'2rem 0'}}>
+            <div className="form-group" style={{display:'-webkit-box',display:'flex',WebkitBoxOrient:'horizontal',WebkitBoxDirection:'normal',flexDirection:'row',WebkitBoxPack:'justify',justifyContent:'space-between',WebkitBoxAlign:'center',marginBottom:'1rem'}}>
+                <input type="text" name="name" id="name" className="input-field" placeholder="Name" style={{fontFamily:'inherit',fontSize:'0.95rem',fontWeight:'400',lineHeight:'inherit',width:'100%',height:'auto',padding:'0.75rem 1.25rem',border:'none',outline:'none',borderRadius:'2rem',color:'#252a32',background:'#f1f5f8'}}/>
+            </div>
+            <div className="form-group" style={{display:'-webkit-box',display:'flex',WebkitBoxOrient:'horizontal',WebkitBoxDirection:'normal',flexDirection:'row',WebkitBoxPack:'justify',justifyContent:'space-between',WebkitBoxAlign:'center',marginBottom:'1rem'}}>
+                <input type="email" name="email" id="email" className="input-field" placeholder="Email Address" style={{fontFamily:'inherit',fontSize:'0.95rem',fontWeight:'400',lineHeight:'inherit',width:'100%',height:'auto',padding:'0.75rem 1.25rem',border:'none',outline:'none',borderRadius:'2rem',color:'#252a32',background:'#f1f5f8'}}/>
+            </div>
+            <div className="form-group" style={{display:'-webkit-box',display:'flex',WebkitBoxOrient:'horizontal',WebkitBoxDirection:'normal',flexDirection:'row',WebkitBoxPack:'justify',justifyContent:'space-between',WebkitBoxAlign:'center',marginBottom:'1rem'}}>
+                <input type="text" name="area" id="area" className="input-field" placeholder="Area" style={{fontFamily:'inherit',fontSize:'0.95rem',fontWeight:'400',lineHeight:'inherit',width:'100%',height:'auto',padding:'0.75rem 1.25rem',border:'none',outline:'none',borderRadius:'2rem',color:'#252a32',background:'#f1f5f8'}}/>
+            </div>
+            <div className="form-group" style={{display:'-webkit-box',display:'flex',WebkitBoxOrient:'horizontal',WebkitBoxDirection:'normal',flexDirection:'row',WebkitBoxPack:'justify',justifyContent:'space-between',WebkitBoxAlign:'center',marginBottom:'1rem'}}>
+                <input type="numerical" name="contact" id="contact" className="input-field" placeholder="Contact Number" style={{fontFamily:'inherit',fontSize:'0.95rem',fontWeight:'400',lineHeight:'inherit',width:'100%',height:'auto',padding:'0.75rem 1.25rem',border:'none',outline:'none',borderRadius:'2rem',color:'#252a32',background:'#f1f5f8'}} />
+            </div>
+            <div className="form-group" style={{display:'-webkit-box',display:'flex',WebkitBoxOrient:'horizontal',WebkitBoxDirection:'normal',flexDirection:'row',WebkitBoxPack:'justify',justifyContent:'space-between',WebkitBoxAlign:'center',marginBottom:'1rem'}}>
+                <input type="text" name="flat/block" id="flat/block" className="input-field" placeholder="Flat/Block" style={{fontFamily:'inherit',fontSize:'0.95rem',fontWeight:'400',lineHeight:'inherit',width:'100%',height:'auto',padding:'0.75rem 1.25rem',border:'none',outline:'none',borderRadius:'2rem',color:'#252a32',background:'#f1f5f8'}} />
+                
+            </div>
+            <div className="form-group" style={{display:'-webkit-box',display:'flex',WebkitBoxOrient:'horizontal',WebkitBoxDirection:'normal',flexDirection:'row',WebkitBoxPack:'justify',justifyContent:'space-between',WebkitBoxAlign:'center',marginBottom:'1rem'}}>
+                <input type="numerical" name="building" id="building" className="input-field" placeholder="Building Number" style={{fontFamily:'inherit',fontSize:'0.95rem',fontWeight:'400',lineHeight:'inherit',width:'100%',height:'auto',padding:'0.75rem 1.25rem',border:'none',outline:'none',borderRadius:'2rem',color:'#252a32',background:'#f1f5f8'}}/>
+            </div>
+            
+            <div className="form-group" style={{display:'-webkit-box',display:'flex',WebkitBoxOrient:'horizontal',WebkitBoxDirection:'normal',flexDirection:'row',WebkitBoxPack:'justify',justifyContent:'space-between',WebkitBoxAlign:'center',marginBottom:'1rem'}}>
+              <input type="button" name="submit" className="input-submit " value="Submit" style={{fontFamily:'inherit',fontSize:'0.95rem',fontWeight:'500',lineHeight:'inherit',cursor:'pointer',padding:'0.65rem 2rem', border:'none',outline:'none',borderRadius:'2rem',textAlign:'center',color:'#ffffff',background:'#7579e7',display:'inline-block',float:'right'}} />
+            </div>
+
+            <div className="form-group" style={{display:'-webkit-box',display:'flex',WebkitBoxOrient:'horizontal',WebkitBoxDirection:'normal',flexDirection:'row',WebkitBoxPack:'justify',justifyContent:'space-between',WebkitBoxAlign:'center',marginBottom:'1rem'}}>
+              <input type="button" name="save" className="input-submit " value="Save" style={{fontFamily:'inherit',fontSize:'0.95rem',fontWeight:'500',lineHeight:'inherit',cursor:'pointer',padding:'0.65rem 2rem', border:'none',outline:'none',borderRadius:'2rem',textAlign:'center',color:'#ffffff',background:'#7579e7',display:'inline-block',float:'center'}} />
+            </div>
+
+
+            <div className="form-group" style={{display:'-webkit-box',display:'flex',WebkitBoxOrient:'horizontal',WebkitBoxDirection:'normal',flexDirection:'row',WebkitBoxPack:'justify',justifyContent:'space-between',WebkitBoxAlign:'center',marginBottom:'1rem'}}>
+            <input type="button" name="cancel" className="input-submit  " value="Cancel" style={{fontFamily:'inherit',fontSize:'0.95rem',fontWeight:'500',lineHeight:'inherit',cursor:'pointer',padding:'0.65rem 2rem', border:'none',outline:'none',borderRadius:'2rem',textAlign:'center',color:'#ffffff',background:'#7579e7',display:'inline-block',float:'left'}} />
+            
+            </div>
+
+
+
+            
+        </form>
+        
     </div>
+</div>
+</main>
+
+    
+    
+    </>
+    
+
   );
 };

@@ -21,6 +21,7 @@ function Home() {
         <h2 style={{color:'blue'}}>User Information</h2>
         <hr className="w-80" style={{borderBottom:'3px solid #2271b1'}} />
         <div className="m-3">
+          
 
           <div className="d-flex justify-content-between  mt-2">
               <FontAwesomeIcon className="fs-4 mt-2" icon={faUser}/>
