@@ -26,7 +26,7 @@ import React,{useState} from "react";
       
          <div className="navbar">
            
-           <Link to="/" className="menu-bars">
+           <Link to={{state : {fromDashboard:true}}} className="menu-bars">
              <FaIcons.FaBars onClick={showSidebar} />
            </Link>
            <h1><span>{" " + props.title}</span></h1>
@@ -34,7 +34,7 @@ import React,{useState} from "react";
          </div>
          <nav className={sidebar ? 'nav-menu active' :'nav-menu'}>
          
-             <ul className='nav-menu-items' onClick={showSidebar}>
+             <ul className='nav-menu-items' onClick={!showSidebar}>
                {/* <li className='navbar-toggle'>
                    <Link to={{state : {fromDashboard:true}}} className="menu-bars">
                        <AiIcons.AiOutlineClose/>

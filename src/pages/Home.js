@@ -26,21 +26,21 @@ function Home() {
           <div className="d-flex justify-content-between  mt-2">
               <FontAwesomeIcon className="fs-4 mt-2" icon={faUser}/>
               <p className="fs-4">Username</p>
-              <FontAwesomeIcon className="fs-4 mt-2" style={{marginLeft:"100px",color:'red'}} icon={faCircleXmark} />
+              <FontAwesomeIcon className="fs-4 mt-2" style={{marginLeft:"300px",color:'red'}} icon={faCircleXmark} />
               <FontAwesomeIcon className="fs-4 mt-2" style={{color:'green'}} icon={faCirclePlus} />
           </div> 
           <hr className="w-80 my-0"/>
           <div className="d-flex justify-content-between  mt-4">
               <FontAwesomeIcon className="fs-4 mt-2" icon={faEnvelope}/>
               <p className="fs-4">Email-id</p>
-              <FontAwesomeIcon className="fs-4 mt-2" style={{marginLeft:"118px",color:'red'}} icon={faCircleXmark} />
+              <FontAwesomeIcon className="fs-4 mt-2" style={{marginLeft:"318px",color:'red'}} icon={faCircleXmark} />
               <FontAwesomeIcon className="fs-4 mt-2" style={{color:'green'}} icon={faCirclePlus} />
           </div>
           <hr className="w-80 my-0"/>
           <div className="d-flex justify-content-between  mt-4">
               <FontAwesomeIcon className="fs-4 mt-2" icon={faPhone}/>
               <p className="fs-4">Contact</p>
-              <FontAwesomeIcon className="fs-4 mt-2" style={{marginLeft:"118px",color:'red'}} icon={faCircleXmark} />
+              <FontAwesomeIcon className="fs-4 mt-2" style={{marginLeft:"318px",color:'red'}} icon={faCircleXmark} />
               <FontAwesomeIcon className="fs-4 mt-2" style={{color:'green'}} icon={faCirclePlus} />
           </div>
           <hr className="w-80 my-0"/>

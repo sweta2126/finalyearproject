@@ -20,7 +20,7 @@ function App() {
       <Router>
         <Sidebar title="Building-Management" />
         <Routes>
-          <Route exact path='/home' element={<Home/>}/> 
+          <Route exact path='/' element={<Home/>}/> 
           <Route exact path='/society' element={<Society/>} />
           <Route exact path='/units' element={<Units/>} />
           <Route exact path='/units/registerowner' element={<RegisterOwner/>} />
