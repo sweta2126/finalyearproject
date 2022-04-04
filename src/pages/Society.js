@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
 function Society() {
-  
+
   const [info, setInfo] = useState({
     name: "",
     address: "",
@@ -14,7 +14,6 @@ function Society() {
   });
   let name, value;
    const handleOnChange = (event) =>{
-     console.log(event)
     name = event.target.name;
     value = event.target.value
     setInfo({...info, [name]:value})
@@ -45,12 +44,9 @@ function Society() {
 
   return (
 <>
-    
-    
-
   {/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossOrigin="anonymous" /> */}
   
-<main className="main" style={{maxWidth:'85rem',width:'100%',height:'auto',margin:'0 auto',padding:'0.2rem '}} >
+<main className="main" style={{maxWidth:'85rem',width:'100%',height:'auto',margin:'0 auto',padding:'0.2rem'}} >
 
 
   <div className="wrapper" style={{maxWidth:'38rem',width:'100%',margin:'0 auto',padding:'5rem 1.5 rem'}} >
@@ -104,8 +100,9 @@ function Society() {
   </div>
 </main>
 
-      
-      
+
+
+
 </>
   );
 }
